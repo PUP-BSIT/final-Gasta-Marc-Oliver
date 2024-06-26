@@ -1,169 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Gasta Marc Oliver</title>
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Marc Oliver L. Gasta</title>
+</head>
+<body>
     <header class="header">
-      <h1>Marc Oliver L. Gasta</h1>
+        <h1>Marc Oliver L. Gasta</h1>
+        <nav>
+            <ul>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#comments">Comments</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-      <div class="section">
-        <h2>Interests and Hobbies</h2>
-        <ul class="hobbies-list">
-            <li><img src="./image/sports.png" 
-              alt="Sports icon" class="hobby-icon"> Sports</li>
-            <li><img src="./image/game.png" 
-              alt="Games icon" class="hobby-icon"> Games</li>
-            <li><img src="./image/film.png" 
-              alt="Movies icon" class="hobby-icon"> Movies</li>
-            <li><img src="./image/music.png" 
-              alt="Music icon" class="hobby-icon"> Music</li>
-        </ul>
-    </div>
+    <main class="container">
+        <section id="interests" class="section">
+            <h2>Interests and Hobbies</h2>
+            <ul class="hobbies-list">
+                <li><i class="fas fa-basketball-ball"></i> Sports</li>
+                <li><i class="fas fa-gamepad"></i> Games</li>
+                <li><i class="fas fa-film"></i> Movies</li>
+                <li><i class="fas fa-music"></i> Music</li>
+            </ul>
+        </section>
 
-      <div class="section">
-        <h2>My Works</h2>
-        <ol>
-          <li><a href="countries.html">Countries</a></li>
-          <li><a href="in_five_years.html">Five Years</a></li>
-          <li><a href="#">Website 3</a></li>
-          <li><a href="#">Website 4</a></li>
-          <li><a href="#">Website 5</a></li>
-        </ol>
-      </div>
+        <section id="works" class="section">
+            <h2>My Works</h2>
+            <ol>
+                <li><a href="countries.html">Countries</a></li>
+                <li><a href="in_five_years.html">Five Years</a></li>
+                <li><a href="#">Website 3</a></li>
+                <li><a href="#">Website 4</a></li>
+                <li><a href="#">Website 5</a></li>
+            </ol>
+        </section>
 
-      <div class="section">
-        <h2>Goals</h2>
-        <ol>
-          <li>Graduate
-          <li>Success</li>
-          <li>My Mom</li>
-          <li>Peace</li>
-          <li>Love</li>
-        </ol>
-      </div>
+        <section id="goals" class="section">
+            <h2>Goals</h2>
+            <ol>
+                <li>Graduate</li>
+                <li>Success</li>
+                <li>My Mom</li>
+                <li>Peace</li>
+                <li>Love</li>
+            </ol>
+        </section>
 
-      <div class="section">
-        <h2>Testimonials</h2>
-        <div class="testimonial-list">
-          <p>Your website is very unique. - Ilagan</p>
-          <p>Your website is amazing! - Escuro</p>
-          <p>I love it - Trinidad</p>
-          <p>Well done! - Rosario</p>
-          <p>Great Work! - Armedilla</p>
+        <section id="testimonials" class="section">
+            <h2>Testimonials</h2>
+            <div class="testimonial-list">
+                <p>"Your website is very unique." - Ilagan</p>
+                <p>"Your website is amazing!" - Escuro</p>
+                <p>"I love it" - Trinidad</p>
+                <p>"Well done!" - Rosario</p>
+                <p>"Great Work!" - Armedilla</p>
+            </div>
+        </section>
+
+        <section id="comments" class="section">
+            <h2>Comments</h2>
+            <div class="comments-container">
+                <div class="comments-list">
+                    <div class="sort-options">
+                        <label for="sort_order">Arrange By:</label>
+                        <select id="sort_order">
+                            <option value="asc">Oldest</option>
+                            <option value="desc">Newest</option>
+                        </select>
+                    </div>
+                    <div id="comment-list"></div>
+                </div>
+                <div class="form-container">
+                    <h3>Add Comment</h3>
+                    <form id="comment_form" class="form">
+                        <div class="form-group">
+                            <label for="name_input">Name:</label>
+                            <input type="text" id="name_input" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment_input">Comment:</label>
+                            <textarea id="comment_input" name="comment" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="submit_btn">Submit Comment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Reason for Face to Face</h2>
+            <p>
+                I think the reason for the f-t-f class is because of the cruciality 
+                of the lesson. It might be hard for us to learn it if we did an online class.
+                For me, online class can be abused in a lot of ways. As the teacher 
+                can't see us or observe us during the session. On the other hand, 
+                it is helpful especially to those persons who live far from 
+                the campus. Personally, I prefer face to face classes in this subject 
+                because I think I learn more if it's face to face rather than online 
+                classes. As in online classes I can be very easily distracted 
+                by other things.
+            </p>
+        </section>
+
+<section id="gallery" class="section">
+  <h2>Gallery</h2>
+  <div class="image-container">
+      <img class="card" src="./image/bball.jpg" alt="Basketball">
+      <img class="card" src="./image/arthur.jpg" alt="Arthur">
+      <img class="card" src="./image/pulp.jpg" alt="Pulp Fiction">
+      <img class="card" src="./image/rdr2.jpg" alt="RDR 2">
+      <img class="card" src="./image/cat1.jpg" alt="Cat 1">
+      <img class="card" src="./image/cat2.webp" alt="Cat 2">
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <div class="form-container">
+      <form class="form">
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="fullname">Full Name</label>
+                  <input type="text" id="fullname" name="fullname" required>
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="age">Age</label>
+                  <input type="number" id="age" name="age" required>
+              </div>
+              <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" required>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="form-group checkbox-container">
+              <input type="checkbox" id="send_me" name="sendme">
+              <label for="send_me">Send me a copy</label>
+          </div>
+          <div class="form-group">
+              <button type="submit">Submit</button>
+          </div>
+      </form>
+  </div>
+</section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
         </div>
-      </div>
-    </div>
+        <p>&copy; 2024 Marc Oliver L. Gasta. All rights reserved.</p>
+    </footer>
 
-    <div class="section">
-      <h2>Comments</h2>
-      <div class="comments-container">
-        <div class="comments-list">
-          <div class="sort-options">
-            <label for="sort_order">Arrange By:</label>
-            <select id="sort_order">
-              <option value="asc">Oldest</option>
-              <option value="desc">Newest</option>
-            </select>
-          </div>
-          <div id="comment-list"></div>
-        </div>
-        <div class="form-container">
-          <h3>Add Comment</h3>
-          <form id="comment_form" class="form">
-            <div class="form-group">
-              <label for="name_input">Name:</label>
-              <input type="text" id="name_input" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="comment_input">Comment:</label>
-              <textarea id="comment_input" name="comment" required> </textarea>
-            </div>
-            <div class="form-group">
-              <button type="submit" id="submit_btn">Submit Comment</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Reason for Face to face</h2>
-      <p>
-        I think the reason for the f-t-f class is because of cruciality 
-        of the lesson. It might be hard for us to learn it if we did an class.
-        For me, online class can be abused in a lot of ways. As the teacher 
-        can't see as or observe us during the session. On the other hand, 
-        it is helpfull especially to those persons who lives far from 
-        the campus. Personally, I prefer face to face classes in this subject 
-        because I think I learn more if its face to face rather than online 
-        classes. As in online classes I can be very easily distracted 
-        from other things.
-      </p>
-    </div>
-
-    <div class="section">
-      <div class="gallery">
-        <h2>Gallery</h2>
-        <div class="image-container">
-          <img class="card" src="./image/bball.jpg" alt="Basketball" />
-          <img class="card" src="./image/arthur.jpg" alt="Arthur" />
-          <img class="card" src="./image/pulp.jpg" alt="Pulp Fiction" />
-          <img class="card" src="./image/rdr2.jpg" alt="RDR 2" />
-          <img class="card" src="./image/cat1.jpg" alt="Cat 1" />
-          <img class="card" src="./image/cat2.webp" alt="Cat 2" />
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Contact Me</h2>
-      <div class="form-container">
-        <form class="form">
-          <div class="upper">
-            <div>
-              <label for="email">Email</label>
-              <input type="email" name="email" required />
-            </div>
-
-            <div>
-              <label for="fullname">Full Name</label>
-              <input type="text" name="fullname" required />
-            </div>
-
-            <div>
-              <label for="age">Age</label>
-              <input type="number" name="age" required />
-            </div>
-
-            <div>
-              <label for="subject">Subject</label>
-              <input type="text" name="subject" required />
-            </div>
-          </div>
-
-          <div class="message-container">
-            <label for="message">Message</label>
-            <textarea name="message" cols="30" rows="10" required></textarea>
-          </div>
-
-          <div class="checkbox-container">
-            <input type="checkbox" id="send_me" name="sendme" />
-            <label for="sendme">Send me a copy</label>
-          </div>
-
-          <div class="submit-container">
-            <input type="submit" value="submit" />
-          </div>
-        </form>
-      </div>
-    </div>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
